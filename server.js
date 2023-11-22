@@ -56,34 +56,13 @@ app.post('/getMarks', async (req, res) => {
 function generateTable(marks) {
     return (`
         <table border="2">
-          <tr>
-            <th>Subject</th>
-            <th>Marks</th>
-          </tr>
-          <tr>
-            <td>Subject 1</td>
-            <td>${marks.subject1}</td>
-          </tr>
-          <tr>
-            <td>Subject 2</td>
-            <td>${marks.subject2}</td>
-          </tr>
-          <tr>
-            <td>Subject 3</td>
-            <td>${marks.subject3}</td>
-          </tr>
-          <tr>
-            <td>Subject 4</td>
-            <td>${marks.subject4}</td>
-          </tr>
-          <tr>
-            <td>Subject 5</td>
-            <td>${marks.subject5}</td>
-          </tr>
-          <tr>
-            <td>Subject 6</td>
-            <td>${marks.subject6}</td>
-          </tr>
+          <tr> <th>Subject</th>  <th>Marks</th> </tr>
+          <tr> <td>Subject 1</td> <td>${marks.subject1}</td> </tr>
+          <tr> <td>Subject 2</td> <td>${marks.subject2}</td> </tr>
+          <tr> <td>Subject 3</td> <td>${marks.subject3}</td> </tr>
+          <tr> <td>Subject 4</td> <td>${marks.subject4}</td> </tr>
+          <tr> <td>Subject 5</td> <td>${marks.subject5}</td> </tr>
+          <tr> <td>Subject 6</td> <td>${marks.subject6}</td> </tr>
         </table>
     `);
 }
